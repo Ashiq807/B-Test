@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Sansation", sans-serif;
+    --font-open: "Open Sans", sans-serif;
+
+    --color-custom-gray: #EEEEEE;
+    --color-custom-green: #3F7D58;
+    --color-font-gray: #636363;
+    --color-bg-gray: #F2F2F2;
+    --color-font-black: #121212;
+    --color-custom-black: #262A2D;
+}

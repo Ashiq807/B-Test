@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" type="text/css" />
+    <script defer src="./main.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="m-0 p-0 box-border">
+    <header>
+      <nav
+        class="max-sm:hidden px-[3.793125rem] max-lg:flex-col max-lg:items-start max-lg:gap-3 flex justify-between items-center py-[2.5rem] text-white font-sans"
+      >
+        <div>
+          <img src="./assets/Logo.png" alt="logo" />
+        </div>
+        <div class="bg-[#262A2D] w-[31.125rem] rounded-full p-[1px] relative">
+          <div
+            id="shape"
+            class="absolute bottom-[1px] top-[1px] p-[0.625rem] bg-white rounded-full transition-all duration-500 ease-in-out"
+          ></div>
+          <ul class="flex justify-between gap-4.5">
+            <li class="relative z-10">
+              <a href="#" class="block p-[0.625rem] text-black link">Home</a>
+            </li>
+            <li class="relative z-10">
+              <a href="#" class="block p-[0.625rem] link">About Us</a>
+            </li>
+            <li class="relative z-10">
+              <a href="#" class="block p-[0.625rem] link">Reviews</a>
+            </li>
+            <li class="relative z-10">
+              <a href="#" class="block p-[0.625rem] link">Products</a>
+            </li>
+            <li class="relative z-10">
+              <a href="#" class="block p-[0.625rem] link">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex gap-[1.5rem] justify-between items-center text-black">
+          <a href="#">Log in</a>
+          <a href="#" class="border rounded-full p-[0.625rem]">Sign up Free</a>
+        </div>
+      </nav>
+      <nav
+        class="sm:hidden p-[2.5rem] flex justify-between items-center font-sans"
+      >
+        <div>
+          <img src="./assets/Logo.png" alt="logo" />
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#000000"
+          id="menu-btn"
+          class="cursor-pointer"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </nav>
+      <section
+        id="menu"
+        class="sm:hidden fixed top-0 -left-100 right-0 bottom-0 w-0 backdrop-blur-lg p-5 transition-all duration-500 ease-in-out z-15"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#000000"
+          class="block ms-auto cursor-pointer"
+          id="close"
+        >
+          <path
+            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+          />
+        </svg>
+        <div
+          class="flex gap-[1.5rem] mt-5 justify-between items-center text-black"
+        >
+          <a href="#">Log in</a>
+          <a href="#" class="border rounded-full p-[0.625rem]">Sign up Free</a>
+        </div>
+        <ul class="list-none flex flex-col gap-3 mt-5">
+          <li>
+            <a
+              class="font-normal hover:font-medium hover:text-xl transition-all duration-300"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-normal hover:font-medium hover:text-xl transition-all duration-300"
+              href="#"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-normal hover:font-medium hover:text-xl transition-all duration-300"
+              href="#"
+              >Reviews</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-normal hover:font-medium hover:text-xl transition-all duration-300"
+              href="#"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-normal hover:font-medium hover:text-xl transition-all duration-300"
+              href="#"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </section>
+      <main
+        class="flex flex-col justify-center items-center gap-[1.5rem] py-[3.125rem] md:px-[5rem]"
+      >
+        <div class="bg-custom-gray px-[1.5rem] py-[0.25rem] rounded-[1.5rem]">
+          <h1
+            class="before:content-[' '] before:size-[0.8125rem] before:bg-custom-green before:table before:rounded-full flex justify-between items-center gap-[1rem]"
+          >
+            Top Agro Researcher&apos;s
+          </h1>
+        </div>
+        <h1
+          class="font-sans text-[2.625rem] md:text-[4.625rem] text-center leading-18"
+        >
+          Cultivating Next-Gen Growth <br />in Agriculture
+        </h1>
+        <p class="font-open text-font-gray text-center font-[1.25rem]">
+          Empowering farmers with smarter tools,<br />
+          bigger yields, and greener solutions
+        </p>
+        <a
+          href="#"
+          class="bg-custom-black px-[1.25rem] py-[1rem] text-white font-[1rem] rounded-[1.25rem] no-underline flex gap-[0.625rem]"
+          >Get Started
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#FFFFFF"
+          >
+            <path
+              d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+            />
+          </svg>
+        </a>
+      </main>
+    </header>
+
+    <section>
+      <img
+        src="./assets/banner image.png"
+        alt="banner"
+        class="w-full h-[15rem] object-cover md:h-auto"
+      />
+      <div class="px-[5rem] py-[7.5rem] flex justify-between gap-3 md:gap-5">
+        <h2 class="font-semibold">2025</h2>
+        <p class="basis-[39.375rem] text-font-gray">
+          At <span class="text-custom-green">BioSynthesis,</span> we&apos;re
+          growing a greener, smarter future for agriculture. With innovative
+          tools and sustainable solutions, we help farmers boost yields, cut
+          waste, and protect the planet. Together, we&apos;re cultivating
+          healthier crops, stronger communities, and a brighter tomorrow.
+        </p>
+      </div>
+    </section>
+
+    <section class="w-full relative min-h-fit">
+      <div
+        class="absolute bottom-5 left-[2rem] md:bottom-10 md:left-[6rem] lg:bottom-20 lg:left-[8rem] z-10 h-[3.125rem]"
+      >
+        <div class="flex gap-[2rem] justify-center items-center">
+          <img
+            src="./assets/navigator.png"
+            alt="prev"
+            class="cursor-pointer size-[3.125rem] transition-all duration-300 ease-in-out"
+            id="prev"
+          />
+          <img
+            src="./assets/navigator-1.png"
+            alt="next"
+            class="cursor-pointer size-[3.125rem] transition-all duration-300 ease-in-out"
+            id="next"
+          />
+        </div>
+      </div>
+
+      <div class="w-full overflow-x-hidden scroll-smooth" id="slider">
+        <div
+          class="flex justify-between items-start gap-[1.25rem] w-[400%] md:w-[300%] lg:w-[200%]"
+        >
+          <div class="basis-1/2 md:basis-full md:grow-0 lg:basis-1/8">
+            <div
+              class="w-full h-[15rem] md:h-[25rem] lg:h-[30rem] bg-black relative rounded-[1.25rem] bg-[url('./assets/image.jpg')] bg-cover bg-no-repeat bg-center"
+            ></div>
+            <h1 class="mt-[1.25rem] text-[#636363] text-end">Organic Farm</h1>
+          </div>
+          <div class="basis-1/2 md:basis-full md:grow-0 lg:basis-1/8">
+            <div
+              class="flex justify-between items-start mb-[1rem] md:mb-[2.5rem] lg:mb-[5rem]"
+            >
+              <h1 class="text-[1.5rem] md:text-[2rem] font-sans">
+                Get <br class="hidden md:block" />Started Now
+              </h1>
+              <a href="#"
+                ><img src="./assets/arrow button.png" alt="arrow"
+              /></a>
+            </div>
+            <div>
+              <div
+                class="w-full h-[15rem] md:h-[25rem] lg:h-[30rem] bg-black relative rounded-[1.25rem] bg-[url('./assets/image-1.jpg')] bg-cover bg-no-repeat bg-center"
+              ></div>
+              <h1 class="mt-[1.25rem] text-[#636363] text-end">
+                Organic Fertilizer
+              </h1>
+            </div>
+          </div>
+          <div class="basis-1/2 md:basis-full md:grow-0 lg:basis-1/8">
+            <div
+              class="w-full h-[15rem] md:h-[25rem] lg:h-[30rem] bg-black relative rounded-[1.25rem] bg-[url('./assets/image-2.jpg')] bg-cover bg-no-repeat bg-center"
+            ></div>
+            <h1 class="mt-[1.25rem] text-[#636363] text-end">
+              Technology Irrigation
+            </h1>
+          </div>
+          <div
+            class="basis-1/2 md:basis-full md:grow-0 lg:basis-1/8 md:mt-[2.6875rem]"
+          >
+            <div
+              class="w-full h-[15rem] md:h-[25rem] lg:h-[30rem] bg-black relative rounded-[1.25rem] bg-[url('./assets/image-3.jpg')] bg-cover bg-no-repeat bg-center"
+            ></div>
+            <h1 class="mt-[1.25rem] text-[#636363] text-end">
+              Agricultural Monitoring
+            </h1>
+          </div>
+          <div class="basis-1/2 md:basis-full md:grow-0 lg:basis-1/8">
+            <div
+              class="w-full h-[15rem] md:h-[25rem] lg:h-[30rem] bg-black relative rounded-[1.25rem] bg-[url('./assets/image.jpg')] bg-cover bg-no-repeat bg-center"
+            ></div>
+            <h1 class="mt-[1.25rem] text-[#636363] text-end">Organic Farm</h1>
+          </div>
+          <div class="basis-1/2 md:basis-full md:grow-0 lg:basis-1/8">
+            <div
+              class="flex justify-between items-start mb-[1rem] md:mb-[2.5rem] lg:mb-[5rem]"
+            >
+              <h1 class="text-[1.5rem] md:text-[2rem] font-sans">
+                Get <br class="hidden md:block" />Started Now
+              </h1>
+              <a href="#"
+                ><img src="./assets/arrow button.png" alt="arrow"
+              /></a>
+            </div>
+            <div>
+              <div
+                class="w-full h-[15rem] md:h-[25rem] lg:h-[30rem] bg-black relative rounded-[1.25rem] bg-[url('./assets/image-1.jpg')] bg-cover bg-no-repeat bg-center"
+              ></div>
+              <h1 class="mt-[1.25rem] text-[#636363] text-end">
+                Organic Fertilizer
+              </h1>
+            </div>
+          </div>
+          <div class="basis-1/2 md:basis-full md:grow-0 lg:basis-1/8">
+            <div
+              class="w-full h-[15rem] md:h-[25rem] lg:h-[30rem] bg-black relative rounded-[1.25rem] bg-[url('./assets/image-2.jpg')] bg-cover bg-no-repeat bg-center"
+            ></div>
+            <h1 class="mt-[1.25rem] text-[#636363] text-end">
+              Technology Irrigation
+            </h1>
+          </div>
+          <div
+            class="basis-1/2 md:basis-full md:grow-0 lg:basis-1/8 md:mt-[2.6875rem]"
+          >
+            <div
+              class="w-full h-[15rem] md:h-[25rem] lg:h-[30rem] bg-black relative rounded-[1.25rem] bg-[url('./assets/image-3.jpg')] bg-cover bg-no-repeat bg-center"
+            ></div>
+            <h1 class="mt-[1.25rem] text-[#636363] text-end">
+              Agricultural Monitoring
+            </h1>
+          </div>
+          <div class="md:block md:basis-full lg:hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="w-full h-[20.4375rem] md:h-[44.4375rem] my-[4.5rem] md:my-[7.5rem] bg-[url('./assets/Cta_banner.png')] bg-no-repeat bg-center bg-black overflow-hidden relative"
+    >
+      <p
+        class="m-[1.5rem] md:m-[5rem] font-sans text-[1.5rem] md:text-[2.5rem] lg:text-[3.5rem] text-white"
+      >
+        Transform Your Farm. <br />Empower Your Future.
+      </p>
+      <a
+        href="#"
+        class="no-underline absolute bottom-[2.1875rem] right-[2.5rem] md:bottom-[4.1875rem] md:right-[5rem]"
+      >
+        <img src="./assets/arrow button.png" alt="arrow" />
+      </a>
+    </section>
+
+    <section
+      class="flex flex-col md:flex-row justify-between items-start gap-2 md:gap-[5.6875rem] px-[5rem] md:pt-[0.5rem] lg:pt-[7.5rem] pb-[5.1875rem]"
+    >
+      <h1
+        class="text-[1.5rem] md:text-[2.5rem] lg:text-[3.5rem] font-sans lg:text-nowrap m-0 p-0"
+      >
+        The Green Growth Hub: <br class="hidden sm:block" />Innovation &
+        Earthwise
+      </h1>
+      <p class="lg:basis-[39.375rem] font-open text-font-gray">
+        Insights, tips, and stories from the world of sustainable farming and
+        innovative agriculture — offering expert advice, real-world success
+        stories, and the latest trends to help farmers embrace smarter,
+        eco-friendly practices. From cutting-edge technology to time-tested
+        solutions, we&apos;re here to inspire and guide you on the journey
+        toward a more sustainable, productive future.
+      </p>
+    </section>
+
+    <section
+      class="px-[5rem] flex flex-col md:flex-row md:justify-between gap-[2.25rem] md:gap-[1.25rem]"
+    >
+      <div class="basis-[21.5625rem] flex flex-col gap-[0.75rem]">
+        <div
+          class="h-[15.4375rem] md:h-[23.4375rem] lg:h-[28.4375rem] rounded-[1.25rem] bg-black bg-[url('./assets/Rectangle_3.png')] bg-no-repeat bg-center"
+        ></div>
+        <h1 class="text-[1.5rem] text-font-black font-open">
+          Farming Precision
+        </h1>
+        <p class="font-open text-font-gray text-[1.25rem]">
+          Optimize your fields, reduce waste, and boost yields with smart,
+          precise farming solutions.
+        </p>
+        <a
+          href="#"
+          class="font-sans text-[1.125rem] text-custom-green py-[0.625rem] px-0 flex gap-[0.625rem] items-center underline decoration-[2px]"
+          >Read more
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#3F7D58"
+          >
+            <path
+              d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="basis-[34.375rem] flex flex-col gap-[0.75rem]">
+        <div
+          class="h-[18.0625rem] rounded-[1.25rem] bg-black bg-[url('./assets/Rectangle_5.png')] bg-no-repeat bg-center"
+        ></div>
+        <h1 class="text-[1.5rem] text-font-black font-open">
+          Crop Surveillance
+        </h1>
+        <p class="font-open text-font-gray text-[1.25rem]">
+          Monitor crop health in real-time with smart tools that detect issues
+          early and protect your yield.
+        </p>
+        <a
+          href="#"
+          class="font-sans text-[1.125rem] text-custom-green py-[0.625rem] px-0 flex gap-[0.625rem] items-center underline decoration-[2px]"
+          >Read more
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#3F7D58"
+          >
+            <path
+              d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="basis-[21.5625rem] flex flex-col gap-[0.75rem]">
+        <div
+          class="h-[15.4375rem] md:h-[23.4375rem] lg:h-[28.4375rem] rounded-[1.25rem] bg-black bg-[url('./assets/Rectangle_4.png')] bg-no-repeat bg-center"
+        ></div>
+        <h1 class="text-[1.5rem] text-font-black font-open">
+          Automated Farming
+        </h1>
+        <p class="font-open text-font-gray text-[1.25rem]">
+          Streamline your farm operations with smart automation for faster,
+          easier, and more efficient growth.
+        </p>
+        <a
+          href="#"
+          class="font-sans text-[1.125rem] text-custom-green py-[0.625rem] px-0 flex gap-[0.625rem] items-center underline decoration-[2px]"
+          >Read more
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#3F7D58"
+          >
+            <path
+              d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section
+      class="md:flex md:flex-col lg:flex-row md:justify-between md:items-start mx-[1.5rem] md:mx-[5rem] mt-[9.25rem] overflow-hidden bg-bg-gray rounded-[1.25rem]"
+    >
+      <div
+        class="md:order-2 lg:order-1 basis-full self-stretch pt-[2.5rem] ps-[1rem] md:ps-[2rem]"
+      >
+        <h1 class="font-sans text-[2.625rem]">We&apos;d love to help</h1>
+        <p class="font-open text-font-gray mt-[1.5rem]">
+          Streamline your farm operations with smart automation
+          <br class="hidden md:block" />for faster, easier, and more efficient
+          growth.
+        </p>
+        <form class="mt-[2.6875rem] pr-[2.3125rem] md:pr-[4.3125rem]">
+          <div
+            class="flex flex-col md:flex-row justify-between gap-[1.0625rem]"
+          >
+            <div class="flex flex-col gap-[0.5rem] basis-full">
+              <label for="fname" class="font-open text-font-gray text-[1rem]"
+                >First Name</label
+              >
+              <input
+                type="text"
+                id="fname"
+                required
+                name="first_name"
+                class="bg-white border-[#9C9C9C] border-1 rounded-[1.25rem] p-3 w-full"
+              />
+            </div>
+            <div class="flex flex-col gap-[0.5rem] basis-full">
+              <label for="lname" class="font-open text-font-gray text-[1rem]"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                id="lname"
+                name="last_name"
+                required
+                class="bg-white border-[#9C9C9C] border-1 rounded-[1.25rem] p-3"
+              />
+            </div>
+          </div>
+          <div class="mt-[1.5rem]">
+            <div class="flex flex-col gap-[0.5rem] basis-full">
+              <label for="email" class="font-open text-font-gray text-[1rem]"
+                >Email</label
+              >
+              <input
+                type="email"
+                required
+                id="email"
+                name="email"
+                class="bg-white border-[#9C9C9C] border-1 rounded-[1.25rem] p-3"
+              />
+            </div>
+          </div>
+          <div class="mt-[1.5rem]">
+            <div class="flex flex-col gap-[0.5rem] basis-full">
+              <label for="message" class="font-open text-font-gray text-[1rem]"
+                >Message</label
+              >
+              <textarea
+                type="textarea"
+                id="message"
+                name="message"
+                required
+                rows="5"
+                class="bg-white border-[#9C9C9C] border-1 rounded-[1.25rem] p-3"
+              ></textarea>
+            </div>
+          </div>
+          <button
+            class="font-sans text-[1rem] bg-[#242424] text-white w-full mt-[1.5rem] rounded-[1.25rem] px-[1.25rem] py-[1rem] cursor-pointer mb-[5rem]"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+      <div
+        class="hidden md:block md:order-1 lg:order-2 basis-[39.375rem] self-stretch rounded-[1.25rem] bg-black bg-[url('./assets/Rectangle_6.png')] bg-center bg-no-repeat bg-cover"
+      ></div>
+    </section>
+
+    <footer
+      class="overflow-hidden bg-font-black mt-[5.9375rem] pb-[4.5rem] md:pb-[8.5rem] relative"
+    >
+      <div
+        class="flex flex-col gap-8 md:gap-10 lg:gap-0 lg:flex-row justify-between items-start px-[1.5rem] md:px-[5rem] pt-[3rem]"
+      >
+        <div class="order-2 lg:order-1">
+          <img src="./assets/Frame.png" alt="logo" />
+          <p class="font-open text-[#A3A3A3] text-[1.25rem] mt-[1.5rem]">
+            Monitor crop health in real-time with <br />smart tools that detect
+            issues early <br />and protect your yield.
+          </p>
+          <div class="flex gap-[1.5rem] mt-[3.8125rem]">
+            <a href="#"
+              ><img
+                src="./assets/fi_87390.png"
+                alt="instagram"
+                class="size-[1.375rem]"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/fi_5968958.png"
+                alt="twitter"
+                class="size-[1.375rem]"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/fi_220343.png"
+                alt="linkedin"
+                class="size-[1.375rem]"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/fi_1077041.png"
+                alt="facebook"
+                class="size-[1.375rem]"
+            /></a>
+          </div>
+        </div>
+        <div
+          class="flex order-1 lg:order-2 justify-between items-start flex-wrap md:flex-nowrap gap-[5.625rem]"
+        >
+          <div>
+            <h1
+              class="font-sans text-[1.125rem] text-white mb-[2rem] uppercase"
+            >
+              Company
+            </h1>
+            <ul class="flex flex-col gap-[1rem] capitalize">
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >features</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1
+              class="font-sans text-[1.125rem] text-white mb-[2rem] uppercase"
+            >
+              Resource
+            </h1>
+            <ul class="flex flex-col gap-[1rem] capitalize">
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >Customer Stories</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >Info</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >privacy policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >payments</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1
+              class="font-sans text-[1.125rem] text-white mb-[2rem] uppercase"
+            >
+              career
+            </h1>
+            <ul class="flex flex-col gap-[1rem] capitalize">
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >jobs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >hiring</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >news</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >tips & tricks</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1
+              class="font-sans text-[1.125rem] text-white mb-[2rem] uppercase"
+            >
+              help
+            </h1>
+            <ul class="flex flex-col gap-[1rem] capitalize">
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >help center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-open text-[1rem] text-[#A3A3A3]"
+                  >support</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h1
+        class="font-sans font-bold text-[3.2rem] md:text-[5.5rem] lg:text-[10.5rem] text-center text-white text-nowrap absolute -bottom-3.5 left-[50%] md:-bottom-6 md:left-[50%] lg:-bottom-12 lg:left-[50%] -translate-x-[50%] translate-y-3.5 md:translate-y-6 lg:translate-y-12 z-10 m-0 p-0 opacity-[20%] tracking-[-3%]"
+      >
+        REEP TO GROW
+      </h1>
+    </footer>
+  </body>
+</html>
